@@ -4,6 +4,7 @@ const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const questionPrompt = document.querySelector(".question-prompt"); // Thêm đoạn này
+const confirmation = document.querySelector("#confirmation");
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Cảm ơn chú đã cho cháu nhaa hehe😽";
@@ -13,7 +14,8 @@ yesBtn.addEventListener("click", () => {
   // Ẩn cả hai nút Yes và No
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
-  questionPrompt.style.display = "none"; // Ẩn dòng chữ khi người dùng nhấn vào nút Yes
+  questionPrompt.style.display = "none";
+  confirmation.style.display = "none"; // Ẩn dòng chữ khi người dùng nhấn vào nút Yes
 });
 
 noBtn.addEventListener("mouseover", () => {
